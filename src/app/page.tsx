@@ -1,67 +1,8 @@
-// "use client";
 import { Button } from "@/components/ui/button";
 import { GithubIcon } from "lucide-react";
 import Link from "next/link";
-// import { useEffect } from "react";
 
 export default function Home() {
-  // const data = {
-  //   Name: "lokeshkavisth",
-  //   email: "lokeshkavisth.dev@gmail.com",
-  //   Bio: "full stack web developer",
-  //   Location: "jaipur, rajasthan",
-  //   Public_Repositories: ["fileflow", "nike clone", "saas diary", "mini world"],
-  //   Followers: 25,
-  //   Following: 34,
-  //   skills: [
-  //     "javascript",
-  //     "node js",
-  //     "expressjs",
-  //     "tailwind css",
-  //     "nextjs",
-  //     "deno",
-  //     "firebase",
-  //     "python",
-  //     "ruby on rails",
-  //     "django",
-  //   ],
-  //   Top_5_Repositories: [
-  //     {
-  //       name: "fileflow",
-  //       description: "a platform to host your files",
-  //     },
-  //     {
-  //       name: "nike clone",
-  //       description: "a UI clone website of Nike",
-  //     },
-  //     {
-  //       name: "saas diary",
-  //       description: "the collection of all my SaaS products",
-  //     },
-  //     {
-  //       name: "mini world",
-  //       description: "a collection of all of my 3D designs",
-  //     },
-  //   ],
-  // };
-
-  // useEffect(() => {
-  //   async function fetchGithubData(customData) {
-  //     const result = await fetch("/api/generate-readme", {
-  //       method: "POST",
-  //       headers: {
-  //         "Content-Type": "application/json",
-  //       },
-  //       body: JSON.stringify({ customData }),
-  //     });
-
-  //     const { readme } = await result.json();
-  //     console.log(readme.readme);
-  //   }
-
-  //   // fetchGithubData(data);
-  // }, []);
-
   return (
     <main className="flex-1 mx-auto border-x">
       <section className="w-full py-12 md:py-24 lg:py-32 xl:py-48">
@@ -80,7 +21,12 @@ export default function Home() {
               <Link href="/generate">
                 <Button>Get Started</Button>
               </Link>
-              <Button variant="outline">Learn More</Button>
+              <Link
+                href="https://github.com/lokeshkavisth/mint-me"
+                target="_blank"
+              >
+                <Button variant="outline">Learn More</Button>
+              </Link>
             </div>
           </div>
         </div>
